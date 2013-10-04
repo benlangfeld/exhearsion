@@ -6,7 +6,7 @@ before_install:
   - tar -xf v0.10.3.tar.gz
   - cd elixir-0.10.3
   - make
-  - export PATH="$PATH:~/elixir-0.10.3/bin"
+  - export PATH="$PATH:~/benlangfeld/exhearsion/elixir-0.10.3/bin"
 install:
   - mix deps.get
 script: mix test
