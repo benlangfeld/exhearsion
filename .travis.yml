@@ -4,10 +4,10 @@ otp_release:
 before_install:
   - wget https://github.com/elixir-lang/elixir/archive/v0.10.3.tar.gz
   - tar -xf v0.10.3.tar.gz
-  - cd v0.10.3
+  - cd elixir-0.10.3
   - make
 install:
   - mix deps.get
 before_script:
-  - export PATH="$PATH:./bin"
+  - export PATH="$PATH:~/elixir-0.10.3/bin"
 script: mix test
