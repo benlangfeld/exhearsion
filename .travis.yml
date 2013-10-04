@@ -1,0 +1,13 @@
+language: erlang
+otp_release:
+  - R16B
+before_install:
+  - wget https://github.com/elixir-lang/elixir/archive/v0.10.3.tar.gz
+  - tar -xf v0.10.3.tar.gz
+  - cd v0.10.3
+  - make
+install:
+  - mix deps.get
+before_script:
+  - export PATH="$PATH:./bin"
+script: mix test
